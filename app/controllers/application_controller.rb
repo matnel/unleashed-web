@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
   end
 
   def home
-    redirect_to @current_user and return if @current_user
+    redirect_to @current_user.avatar and return if @current_user
     render 'application/index'
   end
 end
