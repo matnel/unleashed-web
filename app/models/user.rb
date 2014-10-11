@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   after_save :link_to_avatar
 
   has_one :avatar
+  has_many :steps
 
   def self.create_with_omniauth(auth)
     create! do |user|
