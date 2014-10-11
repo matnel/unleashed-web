@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :avatars
+
   resources :users
   resources :sessions
 
